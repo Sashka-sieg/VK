@@ -9,7 +9,7 @@ public class CommentsInfo {
     private int commentId;
     private int likeInfo;
     private String imageUrl;
-    private String textCommenr;
+    private String textComment;
 
     public int getLikeInfo() {
         return likeInfo;
@@ -44,8 +44,8 @@ public class CommentsInfo {
         return imageUrl;
     }
 
-    public String getTextCommenr() {
-        return textCommenr;
+    public String getTextComment() {
+        return textComment;
     }
 
     public void setCanClose(boolean canClose) {
@@ -80,7 +80,7 @@ public class CommentsInfo {
         this.likeInfo = likeInfo;
     }
 
-    public void setTextCommenr(String textCommenr) {
-        this.textCommenr = textCommenr;
+    public void setTextComment(String textCommenr) {
+        this.textComment = textComment;
     }
 }

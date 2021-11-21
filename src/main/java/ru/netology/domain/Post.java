@@ -5,10 +5,11 @@ import java.util.Date;
 public class Post {
     private String id;
     private String nameGroup;
-    private Date datePost;
+    private Date dateAndTimePost;
     private String text;
     private String ImageUrl;
     private int likeInfo;
+    private int repostInfo;
     private int viewInfo;
     private CommentsInfo commentsInfo;
 
@@ -16,8 +17,8 @@ public class Post {
         return nameGroup;
     }
 
-    public Date getDatePost() {
-        return datePost;
+    public Date getDateAndTimePost() {
+        return dateAndTimePost;
     }
 
     public String getText() {
@@ -32,6 +33,10 @@ public class Post {
         return likeInfo;
     }
 
+    public int getRepostInfo() {
+        return repostInfo;
+    }
+
     public int getViewInfo() {
         return viewInfo;
 
@@ -43,6 +48,34 @@ public class Post {
 
     public void setLikeInfo(int likeInfo) {
         this.likeInfo = likeInfo;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        ImageUrl = imageUrl;
+    }
+
+    public void setDateAndTimePost(Date dateAndTimePost) {
+        this.dateAndTimePost = dateAndTimePost;
+    }
+
+    public void setNameGroup(String nameGroup) {
+        this.nameGroup = nameGroup;
+    }
+
+    public void setRepostInfo(int repostInfo) {
+        this.repostInfo = repostInfo;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setText(String text) {
+        this.text = text;
     }
 
     public void setViewInfo(int viewInfo) {
